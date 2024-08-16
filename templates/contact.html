@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Contact Start -->
+<main class="contact">
+    <div class="container">
+      <!-- Section Head Start -->
+      <h2 class="h2-responsive fw-bold text-center my-2">Contact Us</h2>
+      <p class="text-center w-responsive mx-auto mb-1">To visit our campus, please use the directions provided on Google Maps or contact our office for further assistance. We are conveniently located in Noney, East Champaran, and are easily accessible from major landmarks in the area.We value your feedback and suggestions. If you have any comments or concerns, please do not hesitate to share them with us through the contact form on our website or via email.
+
+      </p>
+      <!-- Section Head End -->
+
+      <div class="row">
+        <!-- Form Start -->
+        <div class="col-md-6">
+          <form style="width: 100%;" class="mt-5" action="" method="POST">
+            {% csrf_token %}
+            <!-- Name input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form4Example1">Name</label>
+              <input type="text" id="form4Example1" class="form-control" placeholder="Enter your name" name="username"/>
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form4Example2">Email address</label>
+              <input type="email" id="form4Example2" class="form-control" placeholder="Enter your email" name="email"/>
+            </div>
+
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form4Example3">Message</label>
+              <textarea class="form-control" id="form4Example3" rows="4" placeholder="Write your message here" name="msg"></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+              <label class="form-check-label" for="form4Example4">
+                Send me a copy of this message
+              </label>
+            </div>
+
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+          </form>
+        </div>
+        <!-- Form End -->
+
+        <!-- Map Start -->
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.414428419984!2d84.60235577421132!3d26.66722507059946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993159ec3ebb51f%3A0x17d83bdc6b394c29!2sS.P%20Anglo%20Academy!5e0!3m2!1sen!2sin!4v1723558619060!5m2!1sen!2sin"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"> </iframe>
+        </div>
+        <!-- Map End -->
+      </div>
+    </div>
+  </main>
+  <!-- Contact End -->
+
+{% endblock %}
+
+

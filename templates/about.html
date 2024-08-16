@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- About Start  -->
+
+<main id="about">
+    <div class="about mt-5 mb-5">
+        <div class="container">
+            <!-- Section Head Start  -->
+            <h2 class="h2-responsive  fw-bold text-center my-2">About</h2>
+            <p class="text-center w-responsive mx-auto mb-1"> <b style="color: orangered;">Welcome to SP Anglo Academy School, a beacon of educational excellence and holistic development.</b>
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Mission and Vision:</b>
+                At SP Anglo Academy School, our mission is to nurture the intellectual and personal growth of our students, equipping them with the skills and values necessary to excel in a dynamic world. We envision creating a learning environment that fosters curiosity, creativity, and a lifelong love for learning.
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Academic Excellence:</b>
+                Our school offers a comprehensive curriculum designed to meet the diverse needs of our students. With a strong emphasis on academic rigor and innovative teaching methods, we ensure that every child is challenged and inspired to reach their full potential. Our dedicated faculty members are committed to providing personalized attention and support, helping each student achieve their academic goals.
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Holistic Development:</b>
+                We believe that education extends beyond the classroom. At SP Anglo Academy, we promote a balanced approach to learning that includes extracurricular activities, sports, and arts. Our diverse range of programs encourages students to explore their interests, develop leadership skills, and build teamwork and resilience.
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Values and Culture:</b>
+                Our school is grounded in core values such as respect, integrity, and perseverance. We strive to create a nurturing and inclusive community where every student feels valued and supported. We foster an environment where ethical behavior and a sense of social responsibility are integral to our school culture.
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Facilities and Resources:</b>
+                SP Anglo Academy is equipped with state-of-the-art facilities, including modern classrooms, well-resourced libraries, science labs, and sports facilities. Our technology-enabled learning spaces enhance the educational experience, providing students with the tools they need to succeed in the digital age.
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Community Engagement:</b>
+                We recognize the importance of strong partnerships between school, parents, and the community. We actively engage with parents and local organizations to support student development and well-being. Our collaborative approach ensures that our students receive a well-rounded education and are prepared for future challenges.
+                <br>
+                <hr>
+                <br>
+                <b style="color: blue;">Join Us:</b>
+                We invite you to be a part of the SP Anglo Academy family, where education meets excellence. Together, we can embark on a journey of growth and discovery, shaping the leaders of tomorrow.
+                
+                For more information or to schedule a visit, please contact us at +91 0123456789.
+                
+                </p>
+            <!-- Section Head Start  -->
+
+
+            <!--Profile section start -->
+            <section class="vh-100">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <!-- Profile Card 1 -->
+                        <div class="col-md-6 col-xl-4 mb-4">
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body text-center">
+                                    <div class="mt-3 mb-4">
+                                        <img src="{% static 'images/school22.jpeg' %}" class="rounded-circle img-fluid"
+                                            style="width: 150px; height: 150px; object-fit: cover;" />
+                                    </div>
+                                    <h4 class="mb-2">Premchandra Prasad</h4>
+                                    <p class="text-muted mb-4">Director <span class="mx-2">:-</span> <a
+                                            href="{% url 'home' %}">S.P. Anglo Academy</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Card 2 -->
+                        <div class="col-md-6 col-xl-4 mb-4">
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body text-center">
+                                    <div class="mt-3 mb-4">
+                                        <img src="{% static 'images/school21.jpeg' %}" class="rounded-circle img-fluid"
+                                            style="width: 150px; height: 150px; object-fit: cover;" />
+                                    </div>
+                                    <h4 class="mb-2">Pramod Pandey</h4>
+                                    <p class="text-muted mb-4">Principal <span class="mx-2">:-</span> <a
+                                            href="{% url 'home' %}">S.P. Anglo Academy</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Profile section end-->
+
+
+
+            <div class="row pt-5">
+                <div class="col-md-6 align-items-stretch">
+                    <img class="img-fluid" src="{% static 'images/school6.jpeg' %}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="h2-responsive section-heading fw-bold text-center">Our School</h2>
+                    <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio porro quibusdam
+                        voluptatibus molestias. Voluptatibus consequatur voluptate repellendus, dicta necessitatibus
+                        corporis!
+                        Sunt aspernatur iure repudiandae ipsa explicabo. Distinctio cum iste numquam.</p>
+
+                    <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ab reiciendis
+                        mollitia ad
+                        veniam. Deleniti, expedita! Reiciendis doloribus quos pariatur error, corrupti voluptatibus rem
+                        tenetur
+                        expedita! Esse repudiandae tenetur magni.</p>
+
+                    <a href="" class="btn btn-primary px-2 pl-2 mt-3">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- About End  -->
+
+            {% endblock %}
