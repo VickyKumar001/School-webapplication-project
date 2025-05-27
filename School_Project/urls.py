@@ -30,5 +30,6 @@ urlpatterns = [
     path('gallery/', gallery, name="gallery"),
     path('contact/', contact, name="contact"),
     path('login/', login, name='login'),
+    path('logout/', user_logout, name='logout'),
     path('signup/', signup, name='signup')
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

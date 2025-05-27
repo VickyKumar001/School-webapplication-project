@@ -6,3 +6,7 @@ class Message(models.Model):
     name=models.CharField(max_length=30, null=False)
     mail=models.EmailField()
     msg=models.TextField(max_length=100)
+
+
+class Gallery(models.Model):
+    image=models.ImageField(upload_to='images/')
